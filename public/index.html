@@ -1,5 +1,133 @@
-   <!DOCTYPE html>
-   <html lang="en">
-   <head><meta charset="utf-8"><title>Deborah Basson</title></head>
-   <body><h1>Deborah Basson</h1><p>Site under construction.</p></body>
-   </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Deborah Basson — Cybersecurity Engineer</title>
+  <meta name="description" content="Deborah Basson, final-year cybersecurity and systems engineering student at EPITA Paris, apprentice at Thales.">
+  <link rel="preload" href="/fonts/cormorant-garamond-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <nav>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="lockup">
+        <h1>Deborah Basson</h1>
+        <p class="role">Cybersecurity Engineer</p>
+      </div>
+      <p class="meta">Graduating 2027</p>
+      <p class="status">Open to cybersecurity roles</p>
+      <ul class="icons">
+        <li>
+          <a href="https://www.linkedin.com/in/basson/" rel="noopener noreferrer" target="_blank" aria-label="LinkedIn" title="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6Z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/deborah-basson" rel="noopener noreferrer" target="_blank" aria-label="GitHub" title="GitHub">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:deborah@deborahbasson.com" aria-label="Email" title="Email">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </a>
+        </li>
+      </ul>
+      <svg class="defs" aria-hidden="true" focusable="false"><filter id="pencil" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence type="fractalNoise" baseFrequency="1.2" numOctaves="2" seed="3" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="1.1" xChannelSelector="R" yChannelSelector="G"/></filter></svg>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        Final-year engineering student at EPITA Paris, majoring in Cybersecurity and Systems.
+        Over two years as an apprentice at Thales, I have worked across software integration,
+        secure development in C, and vulnerability management.
+        I enjoy building reliable, secure systems — from low-level code to the processes that keep them safe over time.
+      </p>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="company">
+        <div class="company-top">
+          <picture class="logo logo-wide"><source srcset="/logos/thales-dark.png" media="(prefers-color-scheme: dark)"><img src="/logos/thales-light.png" alt="Thales logo" width="126" height="16"></picture>
+          <div class="company-lines">
+            <div class="company-row"><h3>Thales</h3></div>
+            <div class="company-row company-meta"><span>Apprenticeship</span></div>
+          </div>
+        </div>
+        <div class="role-item">
+          <div class="degree"><span class="role-title">Vulnerability Management Engineer</span><span class="when">Sep 2026 — present</span></div>
+          <ul>
+            <li>Mapped all tools used by the team that fall under security maintenance (MCS) scope.</li>
+            <li>Defined a systematic code and dependency scanning process to detect CVEs and GHSAs.</li>
+            <li>Refined detection rules to reduce false positives and focus on actionable vulnerabilities.</li>
+            <li>Proposed remediation strategies when a critical CVE impacts a tool in use.</li>
+          </ul>
+        </div>
+        <div class="role-item">
+          <div class="degree"><span class="role-title">Cybersecurity Development Engineer</span><span class="when">Nov 2025 — Sep 2026</span></div>
+          <ul>
+            <li>Integrated a secure authentication module in C within a radar software environment.</li>
+            <li>Implemented and validated security mechanisms ensuring the authentication of software components.</li>
+            <li>Measured and analyzed real-time performance to verify compliance with system constraints.</li>
+            <li>Developed and maintained GitLab CI/CD pipelines to automate integration and validation stages.</li>
+            <li>Worked with development teams to ensure the integration, quality and reliability of deliverables.</li>
+          </ul>
+        </div>
+        <div class="role-item">
+          <div class="degree"><span class="role-title">Software Integration Engineer</span><span class="when">Sep 2024 — Oct 2025</span></div>
+          <ul>
+            <li>Developed an automated testing framework in Python, with a web interface (Flask, REST API) and a CLI.</li>
+            <li>Automatically generated test reports in JSON and JUnit formats to track test campaigns.</li>
+            <li>Migrated existing test suites to the new architecture and validated them to ensure non-regression.</li>
+            <li>Managed framework versioning and validated its evolutions through GitLab CI/CD.</li>
+            <li>Developed and maintained tests in collaboration with software teams.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="school">
+        <div class="school-head">
+          <picture class="logo"><source srcset="/logos/epita-dark.png" media="(prefers-color-scheme: dark)"><img src="/logos/epita-light.png" alt="EPITA logo" width="54" height="38"></picture>
+          <h3>EPITA</h3>
+          <span class="place">Paris, France</span>
+        </div>
+        <div class="degree"><span>Engineering Degree</span><span class="when">2024 — 2027</span></div>
+        <ul><li>Major in Cybersecurity and Systems</li><li>Work-study program with Thales</li></ul>
+      </div>
+      <div class="school">
+        <div class="school-head">
+          <picture class="logo"><source srcset="/logos/iut-vannes-dark.png" media="(prefers-color-scheme: dark)"><img src="/logos/iut-vannes-light.png" alt="IUT de Vannes logo" width="54" height="38"></picture>
+          <h3>IUT de Vannes</h3>
+          <span class="place">Vannes, France</span>
+        </div>
+        <div class="degree"><span>DUT Informatique (Computer Science)</span><span class="when">2022 — 2024</span></div>
+        <ul><li>Track: Deployment of Secure, Communicating Applications</li></ul>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p class="mails"><a href="mailto:deborah@deborahbasson.com">deborah@deborahbasson.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Deborah Basson</p>
+  </footer>
+</body>
+</html>
