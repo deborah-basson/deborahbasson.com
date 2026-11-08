@@ -13,6 +13,13 @@
     <nav>
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
+      <div class="nav-dropdown">
+        <a href="#projects" class="nav-trigger" aria-haspopup="true">Projects <span class="caret" aria-hidden="true">▾</span></a>
+        <ul class="nav-menu">
+          <li><a href="#password-vault">Password Vault</a></li>
+          <li><a href="#posix-shell">POSIX Shell</a></li>
+        </ul>
+      </div>
       <a href="#education">Education</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -67,34 +74,60 @@
           </div>
         </div>
         <div class="role-item">
-          <div class="degree"><span class="role-title">Vulnerability Management Engineer</span><span class="when">Sep 2026 — present</span></div>
-          <ul>
-            <li>Mapped all tools used by the team that fall under security maintenance (MCS) scope.</li>
-            <li>Defined a systematic code and dependency scanning process to detect CVEs and GHSAs.</li>
-            <li>Refined detection rules to reduce false positives and focus on actionable vulnerabilities.</li>
-            <li>Proposed remediation strategies when a critical CVE impacts a tool in use.</li>
-          </ul>
-        </div>
-        <div class="role-item">
-          <div class="degree"><span class="role-title">Cybersecurity Development Engineer</span><span class="when">Nov 2025 — Sep 2026</span></div>
-          <ul>
-            <li>Integrated a secure authentication module in C within a radar software environment.</li>
-            <li>Implemented and validated security mechanisms ensuring the authentication of software components.</li>
-            <li>Measured and analyzed real-time performance to verify compliance with system constraints.</li>
-            <li>Developed and maintained GitLab CI/CD pipelines to automate integration and validation stages.</li>
-            <li>Worked with development teams to ensure the integration, quality and reliability of deliverables.</li>
-          </ul>
+          <div class="degree"><span class="role-title">Cybersecurity Engineer</span><span class="when">Nov 2025 — present</span></div>
+          <div class="mission">
+            <div class="mission-head"><span class="mission-title">Vulnerability management</span><span class="when">Sep 2026 — present</span></div>
+            <ul>
+              <li>Contributed to defining the team’s security maintenance strategy, scoping the software components exposed to vulnerabilities.</li>
+              <li>Strengthened the systematic process used to detect vulnerabilities (CVEs, GHSAs) in source code and third-party dependencies.</li>
+              <li>Improved detection accuracy to focus remediation efforts on vulnerabilities with a real impact.</li>
+              <li>Proposed remediation strategies for critical vulnerabilities affecting the team’s tools.</li>
+            </ul>
+          </div>
+          <div class="mission">
+            <div class="mission-head"><span class="mission-title">Secure development</span><span class="when">Nov 2025 — Sep 2026</span></div>
+            <ul>
+              <li>Integrated a secure authentication module in C within a real-time radar software environment.</li>
+              <li>Implemented and validated security mechanisms ensuring the authentication of software components.</li>
+              <li>Measured and analysed real-time performance to verify compliance with system constraints.</li>
+              <li>Developed and maintained GitLab CI/CD pipelines automating integration and validation stages.</li>
+            </ul>
+          </div>
         </div>
         <div class="role-item">
           <div class="degree"><span class="role-title">Software Integration Engineer</span><span class="when">Sep 2024 — Oct 2025</span></div>
           <ul>
-            <li>Developed an automated testing framework in Python, with a web interface (Flask, REST API) and a CLI.</li>
-            <li>Automatically generated test reports in JSON and JUnit formats to track test campaigns.</li>
-            <li>Migrated existing test suites to the new architecture and validated them to ensure non-regression.</li>
+            <li>Contributed to the development of an automated testing framework in Python with a web interface (Flask, REST API) and a CLI.</li>
+            <li>Generated test reports automatically in JSON and JUnit formats to track test campaigns.</li>
+            <li>Migrated existing test suites to the new architecture and validated them for non-regression.</li>
             <li>Managed framework versioning and validated its evolutions through GitLab CI/CD.</li>
-            <li>Developed and maintained tests in collaboration with software teams.</li>
           </ul>
         </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="terminal">
+        <p class="prompt"><span class="ps1">deborah@basson:~$</span> ls projects/</p>
+
+        <article class="project" id="password-vault">
+          <h3 class="project-name">password-vault/</h3>
+          <p class="project-meta">EPITA · Secure Development course · team of 4 · lead developer</p>
+          <p class="project-desc">Password manager in C with a web interface. AES-256-GCM encryption at rest, Argon2id password hashing, TOTP two-factor authentication, TLS 1.3 only, CSRF protection, rate limiting and memory zeroing with libsodium. 66 tests, valgrind-clean, CI pipeline with automated security checks.</p>
+          <p class="project-tags">[C] [libsodium] [OpenSSL] [SQLite] [Criterion] [GitHub Actions]</p>
+          <a class="project-link" href="https://github.com/deborah-basson/password-vault" rel="noopener noreferrer" target="_blank">→ github.com/deborah-basson/<wbr>password-vault</a>
+        </article>
+
+        <article class="project" id="posix-shell">
+          <h3 class="project-name">posix-shell/</h3>
+          <p class="project-meta">EPITA · systems programming · group project</p>
+          <p class="project-desc">POSIX-compliant shell written in C99 with no external libraries. Lexer, recursive-descent parser, AST, expansion and execution with fork/exec, pipelines and file descriptor redirections. About 7,800 lines of C and 3,200 functional tests.</p>
+          <p class="project-tags">[C99] [POSIX] [Autotools] [Criterion]</p>
+          <a class="project-link" href="https://github.com/deborah-basson/posix-shell" rel="noopener noreferrer" target="_blank">→ github.com/deborah-basson/<wbr>posix-shell</a>
+        </article>
+
+        <p class="prompt"><span class="ps1">deborah@basson:~$</span> <span class="cursor" aria-hidden="true"></span></p>
       </div>
     </section>
 
